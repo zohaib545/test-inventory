@@ -11,8 +11,8 @@ app.use(bodyParser.json())
 app.use('/api', api)
 
 app.listen(config.PORT, function () {
-    console.log(`Server is listening on ${config.PORT}`);
+    console.log(`Server is listening on ${config.PORT}`)
     mongoose.connect()
-}).on('error', function () {  
+}).on('error', function () {
     console.log('Something went wrong')
 })
